@@ -28,7 +28,7 @@ export class PostTemaComponent implements OnInit {
     })
   }
 
-  findByIdTema(){
+  findByIdTema(id:number){
     this.temaService.getByIdTema(this.tema.id).subscribe((resp:Tema) => {
       this.tema = resp;
     })
